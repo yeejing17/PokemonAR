@@ -5,18 +5,20 @@ using Vuforia;
 
 public class VBScript : MonoBehaviour, IVirtualButtonEventHandler {
 
-    private GameObject vbButtonObject;
+    //private GameObject vbButtonObject;
     private GameObject pokemon;
     private Animator animator;
     private AudioSource audio;
+    public string pokemonName;
 
     // Use this for initialization
     void Start () {
-        vbButtonObject = GameObject.Find("actionButton");
-        pokemon = GameObject.Find("Pokemon");
+        //vbButtonObject = GameObject.Find("actionButton");
+        pokemon = GameObject.Find(pokemonName);
         animator = pokemon.GetComponent<Animator>();
         audio = pokemon.GetComponent<AudioSource>();
-        vbButtonObject.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
+        this.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
+        //vbButtonObject.GetComponent<VirtualButtonBehaviour>().RegisterEventHandler(this);
 	}
 	
     public void OnButtonPressed(VirtualButtonAbstractBehaviour vb)
