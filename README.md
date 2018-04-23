@@ -4,7 +4,7 @@
 
 AR project of CZ4001.
 
-An Android AR application which can displayed selected Pokemon in 3D by pointing the phone camera to the Pokemon image provided in "PokemonIMG" folder.
+An Android AR application which can display selected Pokemon in 3D by pointing the phone camera to the Pokemon images provided in "PokemonIMG" folder.
 
 User can interact with Pokemon by pressing the virtual button.
 
